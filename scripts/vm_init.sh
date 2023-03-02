@@ -17,4 +17,4 @@ apt-get update
 
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-docker run -p 80:8888 jupyter/minimal-notebook 
+docker run -d -p 80:8888 jupyter/minimal-notebook start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''

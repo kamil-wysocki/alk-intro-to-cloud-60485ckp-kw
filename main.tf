@@ -18,7 +18,7 @@ resource "google_compute_instance" "vm_compute_engine" {
     zone = var.zone_name
     machine_type = "e2-medium"
 
-    tags = ["alk", "hugo"]
+    tags = ["alk", "jupyter"]
 
     boot_disk {
         initialize_params {
